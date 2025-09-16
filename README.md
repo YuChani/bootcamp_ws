@@ -1,10 +1,25 @@
 # bootcamp_ws
 
-# RUN limo gazebo
-roslaunch limo_gazebo_sim limo_four_diff.launch
+## build Dockerfile
+cd docker
+__if don't have authority__
+chmod +x build.sh
+./build.sh
 
-# MAKE map
-roslaunch turtlebot3_slam turtlebot3_slam.launch 
+## build Dockerfile
+cd docker
+__if don't have authority__
+chmod +x run.sh
+./run.sh
 
-# RUN limo navigation
-roslaunch turtlebot3_navigation turtlebot3_navigation.launch 
+## cmake g2o
+cd src/g2o
+mkdir build && cd build
+cmake ..
+make
+
+## cmake ceres
+cd src/ceres-solver
+mkdir build && cd build
+cmake ..
+make
