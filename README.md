@@ -1,10 +1,12 @@
 # bootcamp_ws
 
 ## build Dockerfile
+```bash
 cd docker
 __if don't have authority__
 chmod +x build.sh
 ./build.sh
+```
 
 ## build Dockerfile
 cd docker
