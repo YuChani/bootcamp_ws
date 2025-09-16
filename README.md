@@ -8,7 +8,7 @@ chmod +x build.sh
 ./build.sh
 ```
 
-## build Dockerfile
+## run Dockerfile
 ```bash
 cd docker
 - if don't have authority
